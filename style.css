@@ -1,0 +1,655 @@
+/* Sıfırlama Kodlar  Başlangıç*/
+:root {
+  --text-color: rgb(237, 253, 255);
+  --obje-color: #16a9f2;
+  --mert-renk: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s;
+  background: no-repeat;
+  background-size: cover;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: url(resimler/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: grid; */
+  /* place-items: center center; */
+}
+a {
+  color: var(--text-color);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+}
+.fa-solid {
+  padding: 1rem;
+}
+/* Sıfırlama Kodlar  Bitiş*/
+/* Header Başlangıç  */
+header {
+  font-weight: 500;
+  position: sticky;
+  height: 10rem;
+  border-bottom: 0.2rem solid rgb(255, 255, 255, 0.06);
+  top: 0;
+  z-index: 1000;
+}
+.container {
+  width: 80%;
+  margin-top: 10rem;
+  margin: auto;
+  cursor: pointer;
+}
+header nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+header nav .logo a {
+  color: var(--text-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  column-gap: 30px;
+}
+nav ul li a {
+  transition: color 0.25s ease;
+  font-size: 2rem;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  column-gap: 4.8rem;
+}
+nav .menu .menu-button {
+  color: aquamarine;
+  background-color: rgb(255, 255, 255, 0.08);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  transition: all 0.25s ease;
+  font-size: 2rem;
+}
+
+/* Hover Kodları Başlangıç */
+nav ul li a:hover {
+  color: var(--obje-color);
+}
+nav .menu .menu-button:hover {
+  background-color: var(--obje-color);
+  color: var(--text-color);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.giris .links a:hover {
+  background-color: var(--obje-color);
+  color: var(--text-color);
+}
+.footer-right h3:hover {
+  font-size: 2rem;
+  -webkit-transform: rotate(10deg);
+  /* -moz-transform: rotate(10deg); */
+  /* -o-transform: rotate(10deg); */
+  /* -ms-transform: rotate(10deg); */
+  /* transform: rotate(10deg); */
+}
+
+/* Hover Kodları Bitiş */
+/* Header Bitiş  */
+
+/* Footer Başlangıç */
+
+.footer {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  display: flex;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  /* width: 100%; */
+  min-height: 100%;
+  min-width: 450px;
+  left: 0;
+  width: 100%;
+  background-color: var(--obje-color);
+  justify-content: space-between;
+}
+footer .footer-left {
+  line-height: 4.5rem;
+  margin-left: 5%;
+}
+.footer-left h3 {
+  font-size: 2rem;
+}
+.footer-left p {
+  font-size: 2rem;
+  margin-top: 6rem;
+}
+.footer-menu ul li a {
+  font-size: 1.9rem;
+  transition: 0.5s;
+  line-height: 4rem;
+}
+.footer-menu {
+  line-height: 4rem;
+}
+
+.footer-menu li a:hover {
+  color: darkblue;
+}
+.footer-menu h3 {
+  font-size: 1.9rem;
+}
+.footer-menu h3.active {
+  text-decoration: underline;
+}
+.footer-right {
+  margin-right: 2%;
+  align-items: center;
+}
+.footer-right h3 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px darkblue;
+  margin-left: ;
+}
+
+.footer-right ul {
+  margin-top: 5rem;
+  font-size: 4rem;
+  display: flex;
+  column-gap: 5rem;
+  line-height: 7rem;
+  margin-left: 5.3rem;
+}
+.footer-right ul i {
+  transition: 0.5s;
+  vertical-align: middle;
+}
+.footer-right ul i:hover {
+  color: darkblue;
+}
+/* Footer Bitiş */
+
+/* İçerik Css Başlangıç */
+/* Anasayfa Css Başlagıç */
+.giris {
+  color: var(--text-color);
+  padding-top: 15rem;
+  margin-bottom: 22rem;
+}
+.giris h1 {
+  font-size: 7rem;
+  text-align: center;
+}
+.giris p {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.giris .links {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-top: 2rem;
+}
+.giris .links a {
+  background-color: var(--text-color);
+  border-radius: 5rem;
+  padding: 1rem;
+  padding-top: 1rem;
+  width: 20rem;
+  color: black;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 2rem;
+  transition: all 0.25s ease-in;
+}
+/* Anasayfa Css Bitiş */
+/* Sipariş Ver Başlangıç */
+.siparis {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10rem;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+.siparis label {
+  margin-left: 3rem;
+}
+.siparis h2 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+}
+.siparis input,
+option {
+  background-color: aqua;
+}
+.siparis p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.siparisver {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 73%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 80%;
+    margin-top: 0;
+  }
+  .siparis {
+    text-align: center;
+  }
+}
+/* Sipariş Ver Bitiş */
+
+/* Referanslar Başlangıç */
+.referanslar {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  padding: 2rem;
+  grid-gap: 10rem;
+  width: 80%;
+  margin: auto;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.card {
+  background-color: var(--mert-renk);
+  border-radius: 2rem;
+  box-shadow: 0 0 3rem black;
+}
+img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem 2rem 0 0;
+}
+.grid {
+  position: relative;
+}
+.grid:hover:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2rem 2rem 0 0;
+  opacity: 0.6;
+}
+.card1 > .grid:after {
+  background-image: linear-gradient(darkblue, aquamarine);
+}
+.card2 > .grid:after {
+  background-image: linear-gradient(pink, aquamarine);
+}
+.card3 > .grid:after {
+  background-image: linear-gradient(rgb(32, 183, 217), aquamarine);
+}
+.card4 > .grid:after {
+  background-image: linear-gradient(rgb(248, 131, 14), aquamarine);
+}
+.details {
+  padding: 2rem 1rem;
+}
+.details h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1rem 0 1.5rem 0;
+  text-align: center;
+}
+.details p a {
+  color: var(--obje-color);
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+/* Referanslar Bitiş */
+
+/* İletişim Css Başlangıç */
+.form {
+  width: 60%;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+
+  position: relative;
+}
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+.form input:focus {
+  border-bottom: 2px solid #78788c;
+}
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+span {
+  margin: 0 5px 0 15px;
+}
+
+/* İletişim Css Bitiş */
+
+/* İçerik Css Bitiş */
+
+/* Navbar Active Başlangıç */
+nav ul li a.active {
+  text-decoration-color: var(--obje-color);
+  text-decoration-line: overline;
+}
+/* Navbar Active Bitiş */
+
+/* Responsive Başlangıç */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .menu ul {
+    column-gap: 10rem;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .giris {
+    padding: 5rem;
+  }
+  .giris h1 {
+    font-size: 4rem;
+  }
+  .giris p {
+    font-size: 3rem;
+  }
+  .links .fa-solid {
+    display: none;
+  }
+
+  .giris .link a {
+    padding: 1.4rem;
+    width: 90%;
+  }
+  header nav .logo a {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    column-gap: 3rem;
+  }
+  .footer-menu {
+    margin-left: 0;
+  }
+
+  footer .footer-left h3 {
+    display: none;
+  }
+  footer .footer-left p {
+    display: none;
+  }
+}
+@media (max-width: 514px) {
+  .container {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .menu ul {
+    column-gap: 8rem;
+    /* font-size: 1rem; */
+    margin: auto;
+  }
+  footer .container {
+    width: 120%;
+    column-gap: 4rem;
+  }
+  footer .footer-left h3 {
+    display: none;
+  }
+  footer .footer-left p {
+    display: none;
+  }
+}
+@media (max-width: 477px) {
+  .container {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1rem;
+  }
+  .menu ul {
+    column-gap: 4rem;
+    text-align: center;
+    width: 100%;
+    padding-right: 4rem;
+  }
+  footer {
+    width: 108%;
+  }
+  /* footer .container {
+    width: 100%;
+    column-gap: 2rem;
+  } */
+  footer .footer-left h3 {
+    display: none;
+  }
+  footer .footer-left p {
+    display: none;
+  }
+  .footer-right h3 {
+    margin-left: 3rem;
+    font-size: 3rem;
+  }
+  .footer-menu ul {
+    column-gap: 30rem;
+    margin-right: 1rem;
+  }
+  .iletisim-box {
+    width: 100%;
+    height: 90%;
+    font-size: 5rem;
+  }
+  .form {
+    width: 100%;
+    height: 90%;
+    margin-top: 5rem;
+  }
+  .form span {
+    display: none;
+  }
+  .form h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .menu ul {
+    /* column-gap: 1rem; */
+    width: 100%;
+  }
+  nav .menu .menu-button {
+    display: none;
+  }
+}
+@media (max-width: 1525px) {
+  .cards {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 442px) {
+  .cards {
+    margin-right: 30%;
+    min-width: 80%;
+  }
+}
+@media (max-width: 540px) {
+  .cards {
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: 410px) {
+  .container {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .cards {
+    margin-right: 75%;
+  }
+}
+
+/* Menu Responsive Başlangıç */
+
+/* Menu Responsive Bitiş */
+
+/* Responsive Bitiş*/

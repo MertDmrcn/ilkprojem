@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mert Demircan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+      integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="resimler/mert.svg" />
+  </head>
+
+  <body>
+    <!-- Header Başlangıç -->
+    <header class="container">
+      <nav>
+        <div class="logo">
+          <a href="index.html">MERT DEMİRCAN</a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="referanslar.html">Referanslar</a></li>
+          </ul>
+          <a href="siparisver.html" class="menu-button">Sipariş Ver</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Bitiş -->
+    <!-- İçerik Başlangıç     -->
+    <div class="siparis">
+      <h2>Sipariş Formu</h2>
+      <p>
+        Merhabalar Aşağıdaki Form Aracılığı İle Bizlere İstekte Bulunun
+        İstediğiniz Projeyi Hayata Geçirelim.
+      </p>
+
+      <div class="siparisver">
+        <form action="#">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Adınız</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Adınızı Yazınız"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Soyadınız</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Soyadınızı Yazınız"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Mail Adresiniz</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                id="lname"
+                name="lastname"
+                placeholder="Mail Adresiniz"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Telefon Numaranız</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="number"
+                id="lname"
+                name="lastname"
+                placeholder="Telefon Numaranız"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Hangi Sektörde Hizmet Veriyorsunuz?</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="eticaret">E-ticaret</option>
+                <option value="kurumsal">Kurumsal</option>
+                <option value="nakliyat">Nakliyat</option>
+                <option value="market">Market/Satış</option>
+                <option value="market">Diğer</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Yönetim Paneli Nasıl Olacak?</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Opencart</option>
+                <option value="canada">Özel Yönetim Paneli</option>
+                <option value="usa">Wordpress</option>
+                <option value="usa">Yönetim Panelim Var.</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country"
+                >Domain(Alan Adı) ve Hosting(Barındırma) Sahipmisiniz?</label
+              >
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Evet İkiside Mevcut</option>
+                <option value="canada">Sadece Domain</option>
+                <option value="usa">Sadece Hosting</option>
+                <option value="usa">Hayır Sahip Değilim</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Sizinle Nasıl İletişime Geçelim?</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">Telefonla Arayın</option>
+                <option value="canada">Mail Atın</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="subject"
+                >Nasıl Bir Çalışma İstiyorsunuz Detaylarını Yazınız</label
+              >
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Sizlerle çalışmak için sabırsızlanıyorum..."
+                style="height: 200px"
+              ></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Gönder" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- İçerik Bitiş    -->
+    <!-- Footer Başlangıç -->
+    <footer>
+      <div class="footer">
+        <div class="footer-left">
+          <h3>Mert Demircan</h3>
+          <p>Tüm Hakları Saklıdır.</p>
+        </div>
+        <div class="footer-menu">
+          <h3 class="active">Menüler</h3>
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="referanslar.html">Referanslar</a></li>
+            <li>
+              <a href="siparisver.html" class="menu-button">Sipariş Ver</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h3>Takip Etmeyi Unutmayın.</h3>
+          <ul>
+            <li>
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Bitiş-->
+  </body>
+</html>
